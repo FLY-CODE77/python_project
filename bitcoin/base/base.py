@@ -8,6 +8,10 @@
 import pybithumb 
 import pandas as pd
 import time 
+import os 
+
+# previous coin_df.csv file remove 
+os.remove(r'./coin_df.csv')
 
 # tickers -- list of coins name
 tickers = pybithumb.get_tickers()
